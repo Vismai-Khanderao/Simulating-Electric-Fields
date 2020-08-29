@@ -1,11 +1,11 @@
-# Simulating Electric Field
+# Simulating Electric Fields
 
 ## Analysing the electric field at a point due to charged objects
 
 **Features provided:**
 - Add multiple objects to 3D coordinate system
 - Superpose Electric Fields at a point due to multiple objects
-- Calculate Electric Field numerically
+- Calculate Electric Field with numerical integration
 
 **Uniformly charged objects available:**
 - *Point*
@@ -13,19 +13,7 @@
 - *Plane*
 - *Conducting Sphere*
 
-## User Stories:
-
-- As a user, I want to add a charged Point to the System
-- As a user, I want to add a charged Conducting Sphere to the System
-- As a user, I want to add a charged Rod to the System
-- As a user, I want to add a charged Plane to the System
-- As a user, I want to add objects to the System
-- As a user, I want to remove objects from the System
-- As a user, I want to find the value of the Electric Field at the origin in the System
-- As a user, I want to save the state of the system
-- As a user, I want to load the state of a previous system
-
-## Instructions for grader
+## Instructions
 
 - Choose a charged object from the drop down list at the top.
 
@@ -57,19 +45,3 @@ of object and click on the remove button to remove the shape from the field syst
 points, more accurate the approximation is and also the longer it takes 
 - Adding objects too far or large will "spill" onto the right side of the gui, zoom out to fix this
 - Objects may overlap in the wrong order, look at objects from another angle to see actual locations
-
-## Phase 4: Task 2
-
-- ChargedObject is an abstract class that is extended by ConductingSphere, Plane, Point, and Rod. 
-- The ChargedObject class has chargeDensity, coordinate, and numPoints fields that are protected as all shapes have
-those fields.
-- The ChargedObject class also has abstract and protected methods to be used by the classes extending it.
-
-## Phase 4: Task 3
-
-- There was poor cohesion in AppController as the shape to be added to the gui was being made in AppController, the
-shape was first recognised and then the respective shape method was called within the same class,
-to fix this, an abstract method was made in ChargedObject and all shapes which extended it have their own implementation
-which returns the respective shape.
-- A translateH and translateV protected method was also made in ChargedObject as only when shapes are added, the 
-coordinates need to be translated from center origin to having the origin at the top left.
