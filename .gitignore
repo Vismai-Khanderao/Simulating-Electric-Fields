@@ -1,2 +1,5 @@
 *.class
 workspace.xml
+out
+.idea
+Simulating Electric Fields.iml
