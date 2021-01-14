@@ -15,7 +15,7 @@ public class Main extends Application {
         Group axes = AppController.makeAxes("X", "Y");
         Parent root = FXMLLoader.load(getClass().getResource("AppBase.fxml"));
         Group app = new Group(root,axes);
-        primaryStage.setTitle("Electric Field Calculator");
+        primaryStage.setTitle("Simulating Electric Fields");
         primaryStage.setScene(new Scene(app, 1600, 900));
         primaryStage.show();
     }

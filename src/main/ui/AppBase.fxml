@@ -31,7 +31,7 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="57.0" prefWidth="555.0">
                      <children>
-                        <Text fx:id="a" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Grill Sans;" text="Calculate Electric Field" textAlignment="CENTER">
+                        <Text fx:id="a" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Grill Sans;" text="Simulate an Electric Field" textAlignment="CENTER">
                            <font>
                               <Font name="Gill Sans MT" size="40.0" />
                            </font>
