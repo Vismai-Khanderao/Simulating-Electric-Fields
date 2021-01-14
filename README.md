@@ -2,6 +2,8 @@
 
 ## Analysing the electric field at a point due to charged objects
 
+<img src="data/app.png" width="700"/>
+
 **Features provided:**
 - Add multiple objects to 3D coordinate system
 - Superpose Electric Fields at a point due to multiple objects
